@@ -1,0 +1,63 @@
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanji</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <input id="input_box" placeholder="Type a kanji" />
+    <div class="section">
+      <div class="subtitle">Query</div>
+      <div id="query" class="similar"></div>
+    </div>
+    <div class="section">
+      <div class="subtitle">Keisei</div>
+      <div id="keisei" class="similar"></div>
+    </div>
+    <div class="section">
+      <div class="subtitle">Manual</div>
+      <div id="manual" class="similar"></div>
+    </div>
+    <div class="section">
+      <div class="subtitle">Old script</div>
+      <div id="old_script" class="similar"></div>
+    </div>
+    <div class="section">
+      <div class="subtitle">Stroke edit dist</div>
+      <div id="stroke_edit" class="similar"></div>
+    </div>
+    <div class="section">
+      <div class="subtitle">Wanikani Niai HiraKakuStdN-W8</div>
+      <div id="wk_niai_hira" class="similar"></div>
+    </div>
+    <div class="section">
+      <div class="subtitle">Wanikani Niai Noto</div>
+      <div id="wk_niai_noto" class="similar"></div>
+    </div>
+    <div class="section">
+      <div class="subtitle">Yl radical</div>
+      <div id="yl_radical" class="similar"></div>
+    </div>
+    <div class="section">
+      <div class="subtitle">External Links</div>
+      <div id="external">
+        <a id="jitenon" target="_blank"><img src="icons/jitenon.jpg" class="external-icon" /></a>
+        <a id="jpdb" target="_blank"><img src="icons/jpdb.png" class="external-icon" /></a>
+        <a id="wiktionary" target="_blank"><img src="icons/wiktionary.jpg" class="external-icon" /></a>
+        <a id="kanjimap" target="_blank"><img src="icons/kanjimap.png" class="external-icon" /></a>
+        <a id="kanshudo" target="_blank"><img src="icons/kanshudo.png" class="external-icon" /></a>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <!-- Database -->
+    <script src="data/from_keisei.js"></script>
+    <script src="data/manual.js"></script>
+    <script src="data/old_script.js"></script>
+    <script src="data/stroke_edit_dist.js"></script>
+    <script src="data/wk_niai_HiraKakuStdN-W8.js"></script>
+    <script src="data/wk_niai_noto.js"></script>
+    <script src="data/yl_radical.js"></script>
+  </body>
+</html>
